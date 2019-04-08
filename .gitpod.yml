@@ -1,9 +1,9 @@
 tasks:
-  - init:
+  init:
       bundle install && 
       yarn &&
       bundle exec rake db:reset
-  - command:
+  command:
       bundle exec foreman start
 ports:
   - port: 5000
